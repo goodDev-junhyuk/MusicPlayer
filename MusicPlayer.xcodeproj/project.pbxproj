@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		C8BA8C2F2476C4CC00C213A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA8C2E2476C4CC00C213A8 /* AppDelegate.swift */; };
 		C8BA8C312476C4CC00C213A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA8C302476C4CC00C213A8 /* SceneDelegate.swift */; };
-		C8BA8C332476C4CC00C213A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA8C322476C4CC00C213A8 /* ViewController.swift */; };
 		C8BA8C362476C4CC00C213A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BA8C342476C4CC00C213A8 /* Main.storyboard */; };
 		C8BA8C392476C4CC00C213A8 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8BA8C372476C4CC00C213A8 /* MusicPlayer.xcdatamodeld */; };
 		C8BA8C3B2476C4CE00C213A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BA8C3A2476C4CE00C213A8 /* Assets.xcassets */; };
 		C8BA8C3E2476C4CE00C213A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BA8C3C2476C4CE00C213A8 /* LaunchScreen.storyboard */; };
+		C8BA8C462476C54C00C213A8 /* GenreButtonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA8C452476C54C00C213A8 /* GenreButtonScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8BA8C2B2476C4CC00C213A8 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BA8C2E2476C4CC00C213A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8BA8C302476C4CC00C213A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8BA8C322476C4CC00C213A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8BA8C352476C4CC00C213A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8BA8C382476C4CC00C213A8 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 		C8BA8C3A2476C4CE00C213A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BA8C3D2476C4CE00C213A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8BA8C3F2476C4CE00C213A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8BA8C452476C54C00C213A8 /* GenreButtonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +42,8 @@
 		C8BA8C222476C4CC00C213A8 = {
 			isa = PBXGroup;
 			children = (
-				C8BA8C2D2476C4CC00C213A8 /* MusicPlayer */,
 				C8BA8C2C2476C4CC00C213A8 /* Products */,
+				C8BA8C2D2476C4CC00C213A8 /* MusicPlayer */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +60,7 @@
 			children = (
 				C8BA8C2E2476C4CC00C213A8 /* AppDelegate.swift */,
 				C8BA8C302476C4CC00C213A8 /* SceneDelegate.swift */,
-				C8BA8C322476C4CC00C213A8 /* ViewController.swift */,
+				C8BA8C452476C54C00C213A8 /* GenreButtonScreen.swift */,
 				C8BA8C342476C4CC00C213A8 /* Main.storyboard */,
 				C8BA8C3A2476C4CE00C213A8 /* Assets.xcassets */,
 				C8BA8C3C2476C4CE00C213A8 /* LaunchScreen.storyboard */,
@@ -141,10 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BA8C332476C4CC00C213A8 /* ViewController.swift in Sources */,
 				C8BA8C2F2476C4CC00C213A8 /* AppDelegate.swift in Sources */,
 				C8BA8C392476C4CC00C213A8 /* MusicPlayer.xcdatamodeld in Sources */,
 				C8BA8C312476C4CC00C213A8 /* SceneDelegate.swift in Sources */,
+				C8BA8C462476C54C00C213A8 /* GenreButtonScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junhyuk.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.junhyuk.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
